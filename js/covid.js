@@ -1,9 +1,10 @@
+document.getElementById("info-body").style.display = "none";
+
 document
   .getElementById("country-button")
   .addEventListener("click", function () {
     const countryInput = document.getElementById("country-input");
     const countryName = countryInput.value;
-    document.getElementById("info-body").style.display = "none";
     if (countryInput.value.length != 0) {
       console.log("I am there");
       countryInput.value = "";
@@ -20,6 +21,7 @@ document
     }
   });
 function displayCountry(country) {
+  console.log("HEllo");
   document.getElementById("info-body").style.display = "block";
 
   const conName = document.getElementById("country");

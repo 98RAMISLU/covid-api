@@ -21,7 +21,6 @@ document
     }
   });
 function displayCountry(country) {
-  console.log("HEllo");
   document.getElementById("info-body").style.display = "block";
 
   const conName = document.getElementById("country");

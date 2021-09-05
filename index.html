@@ -16,7 +16,10 @@
       body {
         background: url(images/22.jpg) no-repeat;
         background-size: cover;
-        height: 100vh;
+        min-height: 100vh;
+      }
+      #info-body {
+        width: 75%;
       }
       h1 {
         font-size: 65px;
@@ -44,6 +47,9 @@
         h2 {
           font-size: 15px;
         }
+        #info-body {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -63,9 +69,9 @@
           Search
         </button>
       </div>
-      <div id="info-body" class="mx-auto text-center text-white w-75">
-        <h1 id="country" class="my-5"></h1>
-        <h3 id="todayDeaths" class="my-5 py-4"></h3>
+      <div id="info-body" class="mx-auto text-center text-white">
+        <h1 id="country" class="my-3"></h1>
+        <h3 id="todayDeaths" class="mb-5 py-4"></h3>
         <h3 id="todayCases" class="my-5 py-4"></h3>
         <h3 id="cases" class="my-5 py-4"></h3>
         <h3 id="deaths" class="my-5 py-4"></h3>
